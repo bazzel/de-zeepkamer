@@ -2,10 +2,61 @@ body {
   @include serif-font-family;
 }
 
+p, ul, ol {
+  @include margin-trailer($paragraph-margin-bottom);
+}
+
+p + p {
+  text-indent: $paragraph-text-indent;
+}
+
 h1, h2, h3, h4, h5, h6 {
   @include sans-serif-font-family;
+  @include margin-leader($header-margin-top);
+}
+
+h1 {
+  @include adjust-font-size-to($h1-font-size);
+}
+h2 {
+  @include adjust-font-size-to($h2-font-size);
+}
+h3 {
+  @include adjust-font-size-to($h3-font-size);
+}
+h4 {
+  @include adjust-font-size-to($h4-font-size);
+}
+h5 {
+  @include adjust-font-size-to($h5-font-size);
+}
+h6 {
+  @include adjust-font-size-to($h6-font-size);
 }
 
 code, pre {
   @include monospace-font-family;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+ul, ol {
+  margin-left: 1.1rem;
+  & li & {
+    margin-bottom: 0;
+  }
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
 }
