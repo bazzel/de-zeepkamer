@@ -3,3 +3,9 @@
 /*Vertical Rhythm*/
 $rhythm-unit: 'rem';
 
+/*Google fonts*/
+@import url(http://fonts.googleapis.com/css?family=Lora|Open+Sans|Inconsolata);
+$serif-font-family: 'Lora', serif;
+$sans-serif-font-family: 'Open Sans', sans-serif;
+$monospace-font-family: 'Inconsolata', Courier, monospace;
+

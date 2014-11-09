@@ -1,0 +1,11 @@
+@mixin serif-font-family {
+  font-family: $serif-font-family;
+}
+
+@mixin sans-serif-font-family {
+  font-family: $sans-serif-font-family;
+}
+
+@mixin monospace-font-family {
+  font-family: $monospace-font-family;
+}

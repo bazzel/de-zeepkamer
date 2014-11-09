@@ -1,0 +1,11 @@
+body {
+  @include serif-font-family;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include sans-serif-font-family;
+}
+
+code, pre {
+  @include monospace-font-family;
+}
