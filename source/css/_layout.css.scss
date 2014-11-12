@@ -3,7 +3,7 @@ $susy: (
 //   math: fluid, // fluid | static
 //   output: float, // float | isolate
 //   gutter-position: after, // before | after | split | inside | inside-static
-   container: 80em, // <length> | auto
+   container: 80rem, // <length> | auto
 //   container-position: center, // left | center | right | <length> [*2]
    columns: 12, // <number> | <list>
 //   gutters: .25, // <ratio>
@@ -25,19 +25,8 @@ $susy: (
    )
 );
 
-#page_container {
+#page, header > *, footer > * {
   @include container;
-}
-
-header {
-  @include full;
-  #logo {
-    @include span(6);
-  }
-
-  #menu {
-    @include span(last 6);
-  }
 }
 
 #body_content {
@@ -55,8 +44,4 @@ header {
       @include full;
     }
   }
-}
-
-footer {
-  @include full;
 }

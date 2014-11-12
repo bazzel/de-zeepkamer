@@ -1,0 +1,11 @@
+#logo {
+  $brand-name-font-size: ms(8);
+  @include adjust-font-size-to($brand-name-font-size);
+  @include rhythm(2, 0, 0, 2, $brand-name-font-size);
+  text-align: center;
+  color: white;
+  @include text-shadow(rgba(black, 0.8) 3px 1px 2px);
+  a {
+    @include unstyled-link;
+  }
+}

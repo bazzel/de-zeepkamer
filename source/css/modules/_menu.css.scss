@@ -1,14 +1,34 @@
+// http://line25.com/tutorials/how-to-create-a-pure-css-dropdown-menu
 #menu {
+  text-align: center;
   ul {
-    @include horizontal-list;
+    @include no-bullets;
+    margin: 0;
+    display: inline-table;
     li {
-      width: 8em;
-      ul {
-        display: none;
+      float: left;
+      color: white;
+      a {
+        display: inline-block;
+        text-align: center;
+        width: 7rem;
+        @include rhythm-borders($lines: .5);
+        background: #B89362;
+        margin: 0 1em;
+        @include unstyled-link;
+        &:hover {
+          background: #2D2417;
+        }
       }
-      &:hover ul {
-        display: block;
+    }
+    ul {
+      display: none;
+      li {
+        float: none;
       }
+    }
+    li:hover > ul {
+      display: block;
     }
   }
 }
