@@ -65,3 +65,9 @@ ul {
 ol {
   list-style-type: decimal;
 }
+
+img, object {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}

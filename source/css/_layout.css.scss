@@ -1,3 +1,62 @@
-body {
-  @include container(80em);
+$susy: (
+//   flow: ltr, // rtl | ltr
+//   math: fluid, // fluid | static
+//   output: float, // float | isolate
+//   gutter-position: after, // before | after | split | inside | inside-static
+   container: 80em, // <length> | auto
+//   container-position: center, // left | center | right | <length> [*2]
+   columns: 12, // <number> | <list>
+//   gutters: .25, // <ratio>
+//   column-width: false, // <length> | false/null
+//   global-box-sizing: content-box, // border-box | content-box
+//   last-flow: to, // from | to
+   debug: (
+     image: show, // show | hide | show-columns | show-baseline
+//     color: rgba(#66f, .25), // <color>
+     output: overlay, // background | overlay
+     toggle: top right, // right | left and top | bottom
+   ),
+   use-custom: (
+     background-image: true,
+//     background-options: false,
+//     box-sizing: true,
+//     clearfix: false,
+//     rem: true,
+   )
+);
+
+#page_container {
+  @include container;
+}
+
+header {
+  @include full;
+  #logo {
+    @include span(6);
+  }
+
+  #menu {
+    @include span(last 6);
+  }
+}
+
+#body_content {
+  @include full;
+  #side_body {
+    @include span(3);
+  }
+
+  #body {
+    @include span(last 9);
+  }
+
+  &.no_side_body {
+    #body {
+      @include full;
+    }
+  }
+}
+
+footer {
+  @include full;
 }

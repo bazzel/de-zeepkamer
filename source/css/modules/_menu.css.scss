@@ -1,0 +1,14 @@
+#menu {
+  ul {
+    @include horizontal-list;
+    li {
+      width: 8em;
+      ul {
+        display: none;
+      }
+      &:hover ul {
+        display: block;
+      }
+    }
+  }
+}
