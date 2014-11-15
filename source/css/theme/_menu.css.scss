@@ -1,0 +1,14 @@
+// http://line25.com/tutorials/how-to-create-a-pure-css-dropdown-menu
+#menu {
+  ul {
+    li {
+      color: $menu-font-color;
+      a {
+        background: $menu-item-bg;
+        &:hover {
+          background: $menu-item-hover-bg;
+        }
+      }
+    }
+  }
+}

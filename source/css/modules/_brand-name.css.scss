@@ -2,8 +2,6 @@
   @include adjust-font-size-to($brand-name-font-size);
   @include rhythm(2, 0, 0, 2, $brand-name-font-size);
   text-align: center;
-  color: $brand-name-font-color;
-  @include text-shadow($brand-name-shadow);
   a {
     @include unstyled-link;
   }

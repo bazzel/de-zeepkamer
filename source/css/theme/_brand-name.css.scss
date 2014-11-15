@@ -1,0 +1,4 @@
+#logo {
+  color: $brand-name-font-color;
+  @include text-shadow($brand-name-shadow);
+}

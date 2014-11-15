@@ -1,0 +1,28 @@
+$primary-color         : hsl(34, 71%, 49%); // buttercup
+$secondary-color-1     : hsl(43, 30%, 51%); // teak
+$secondary-color-2     : blue;
+
+$primary-color-1       : lighten(saturate($primary-color, 29%), 26%); //hsl(34, 100%, 75%); // #FFC77D - topaz
+$primary-color-2       : lighten(saturate($primary-color, 6%), 12%); //hsl(34, 77%, 61%); // #E8A54E - indian yellow
+$primary-color-3       : darken(saturate($primary-color, 11%), 12%); //hsl(34, 82%, 37%); // #AC6911 - light brown
+$primary-color-4       : darken(saturate($primary-color, 29%), 23%); //hsl(34, 100%, 26%); // #854B00 - mocha
+
+$secondary-color-1-1   : lighten(saturate($secondary-color-1, 37%), 35%); // hsl(43, 67%, 86%) // pipi
+$secondary-color-1-2   : lighten(saturate($secondary-color-1, 8%), 15%); // hsl(43, 38%, 66%) // yuma
+$secondary-color-1-3   : darken(saturate($secondary-color-1, 6%), 14%); // hsl(42, 36%, 37%) // yellow metal
+$secondary-color-1-4   : darken(saturate($secondary-color-1, 24%), 24%); // hsl(43, 54%, 27%) // field drab
+
+
+
+$text-color-light      : white;
+$text-color-dark       : $secondary-color-1-4;
+
+$header-shadow         : rgba($text-color-dark, 0.8) 0 -6px 12px 6px;
+$header-bg-image       : radial-gradient(center, ellipse cover, $primary-color-1 0%, $primary-color 100%);
+
+$brand-name-font-color : $text-color-light;
+$brand-name-shadow     : rgba($text-color-dark, 0.8) 3px 1px 2px;
+
+$menu-font-color       : $text-color-light;
+$menu-item-bg          : $primary-color-3;
+$menu-item-hover-bg    : $primary-color-4;

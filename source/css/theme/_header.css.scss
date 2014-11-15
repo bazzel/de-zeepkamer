@@ -1,0 +1,6 @@
+header {
+  @include rhythm(0, 2, 5, 2);
+  height: rhythm(10);
+  @include background-image($header-bg-image);
+  @include box-shadow($header-shadow);
+}

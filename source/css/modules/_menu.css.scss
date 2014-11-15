@@ -7,18 +7,13 @@
     display: inline-table;
     li {
       float: left;
-      color: $menu-font-color;
       a {
         text-align: center;
-        background: $menu-item-bg;
         margin: 0 1em;
         width: 7rem;
         display: inline-block;
         @include rhythm-borders($lines: .5);
         @include unstyled-link;
-        &:hover {
-          background: $menu-item-hover-bg;
-        }
       }
     }
     ul {
