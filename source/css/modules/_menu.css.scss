@@ -7,17 +7,17 @@
     display: inline-table;
     li {
       float: left;
-      color: white;
+      color: $menu-font-color;
       a {
-        display: inline-block;
         text-align: center;
-        width: 7rem;
-        @include rhythm-borders($lines: .5);
-        background: #B89362;
+        background: $menu-item-bg;
         margin: 0 1em;
+        width: 7rem;
+        display: inline-block;
+        @include rhythm-borders($lines: .5);
         @include unstyled-link;
         &:hover {
-          background: #2D2417;
+          background: $menu-item-hover-bg;
         }
       }
     }

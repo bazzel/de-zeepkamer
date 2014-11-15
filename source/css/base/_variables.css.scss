@@ -39,5 +39,16 @@ $h6-font-size            : ms(0);
 
 $paragraph-margin-bottom : 1;
 $paragraph-text-indent   : 1.5rem;
+
 $header-margin-top       : 0;
 $header-margin-bottom    : 1;
+$header-shadow: rgba(black, 0.8) 0 -6px 12px 6px;
+$header-bg-image: radial-gradient(center, ellipse cover, lighten(hsl(34, 71%, 49%), 30%) 0%, hsl(34, 71%, 49%) 100%);
+
+$brand-name-font-size: ms(8);
+$brand-name-font-color: white;
+$brand-name-shadow: rgba(black, 0.8) 3px 1px 2px;
+
+$menu-font-color: white;
+$menu-item-bg: #B89362;
+$menu-item-hover-bg: #2D2417;
