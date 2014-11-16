@@ -1,8 +1,8 @@
 .index {
   .no_side_body {
     #body_content_title {
-      color: $brand-name-font-color;
-      @include text-shadow($brand-name-shadow, $text-color-dark 0px 0px 1px);
+      color: $front-page-title-color;
+      @include text-shadow($front-page-title-text-shadow);
     }
   }
 }

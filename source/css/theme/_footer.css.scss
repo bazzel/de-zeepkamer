@@ -1,0 +1,6 @@
+footer {
+  color: $footer-font-color;
+  @include background-image($footer-bg-image);
+  box-shadow: $footer-shadow;
+  text-shadow: $footer-text-shadow;
+}
