@@ -1,0 +1,21 @@
+body.index {
+  .no_side_body {
+    text-align: center;
+    position: relative;
+    #body_content_title {
+      position: absolute;
+      right: 0;
+      left: 0;
+      font-style: italic;
+      @include adjust-font-size-to($front-page-title-font-size);
+      // Make sure text does not exceed 1 line
+      line-height: rhythm(18, $front-page-title-font-size);
+    }
+  }
+
+  .img-container {
+    // Based on an image with height of 604px
+    height: rhythm(18); // trial and error...
+    overflow: hidden;
+  }
+}

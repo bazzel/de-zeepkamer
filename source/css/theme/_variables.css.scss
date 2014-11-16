@@ -1,4 +1,5 @@
 $primary-color         : hsl(34, 71%, 49%); // buttercup
+$primary-color         : #A7925D; // buttercup
 $secondary-color-1     : hsl(43, 30%, 51%); // teak
 $secondary-color-2     : blue;
 
@@ -18,10 +19,10 @@ $text-color-light      : white;
 $text-color-dark       : $secondary-color-1-4;
 
 $header-shadow         : rgba($text-color-dark, 0.8) 0 -6px 12px 6px;
-$header-bg-image       : radial-gradient(center, ellipse cover, $primary-color-1 0%, $primary-color 100%);
+$header-bg-image       : radial-gradient(center, ellipse, $primary-color-1 50%, $primary-color 100%);
 
 $brand-name-font-color : $text-color-light;
-$brand-name-shadow     : rgba($text-color-dark, 0.8) 3px 1px 2px;
+$brand-name-shadow     : rgba($text-color-dark, 0.8) 0px 2px 2px;
 
 $menu-font-color       : $text-color-light;
 $menu-item-bg          : $primary-color-3;

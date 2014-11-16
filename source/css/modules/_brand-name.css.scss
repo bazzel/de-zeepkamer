@@ -1,8 +1,14 @@
+$logo: 'logo.png';
+$padding: (image-width('logo.png')+12px);
+
 #logo {
   @include adjust-font-size-to($brand-name-font-size);
   @include rhythm(2, 0, 0, 2, $brand-name-font-size);
   text-align: center;
   a {
     @include unstyled-link;
+    background: image-url($logo) no-repeat;
+    margin-left: -$padding;
+    padding-left: $padding;
   }
 }

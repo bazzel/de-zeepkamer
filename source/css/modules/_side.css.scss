@@ -1,0 +1,6 @@
+#side_body {
+  @include rhythm(-.5, 0, 0, .5, $side-font-size);
+  @include adjust-font-size-to($side-font-size, 2);
+  font-style: italic;
+
+}
