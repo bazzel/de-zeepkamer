@@ -17,5 +17,12 @@ body.index {
     // Based on an image with height of 604px
     height: rhythm(18); // trial and error...
     overflow: hidden;
+    img {
+      @include box-shadow(none);
+      background: none;
+      padding: 0;
+      margin: 0;
+      @include border-radius(0);
+    }
   }
 }

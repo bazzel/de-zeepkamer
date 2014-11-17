@@ -1,0 +1,16 @@
+img {
+  padding: rhythm(.4);
+  @include border-radius(2px);
+  margin-bottom: rhythm(1);
+  &.left {
+    margin-right: 2em;
+    float: left;
+  }
+  &.right {
+    margin-left: 2em;
+    float: right;
+  }
+  &.small {
+    height: rhythm(10.2);
+  }
+}

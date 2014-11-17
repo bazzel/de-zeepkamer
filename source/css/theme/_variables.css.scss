@@ -18,7 +18,7 @@ $text-color-light             : white;
 $text-color-dark              : $secondary-color-1-4;
 
 $header-shadow                : rgba($text-color-dark, 0.8) 0 -6px 12px 6px;
-$header-bg-image              : radial-gradient(center, ellipse, $secondary-color-1-1 50%, $secondary-color-1 100%);
+$header-bg-image              : radial-gradient(50% 40%, ellipse, $secondary-color-1-1 30%, $secondary-color-1 100%);
 
 $brand-name-font-color        : $text-color-light;
 $brand-name-shadow            : rgba($text-color-dark, 0.8) 0px 2px 2px;
@@ -35,3 +35,7 @@ $footer-shadow                : $footer-shadow-color 0 6px 12px 6px;
 $footer-bg-image              : radial-gradient(top, $secondary-color-1-2 0%, $secondary-color-1-1 100%);
 $footer-font-color            : $text-color-light;
 $footer-text-shadow           : $footer-shadow-color 0px 0px 1px;
+
+$img-shadow-color: $secondary-color-1;
+$img-shadow: $img-shadow-color 0px 1px 3px 0px;
+$img-bg: transparentize($img-shadow-color, .95);

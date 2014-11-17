@@ -3,12 +3,9 @@
     <h1 id='body_content_title'>Het proces</h1>
     <section id='body'>
       <div class='inner'>
-        <%- 2.times do %>
-          <p><%= lorem.paragraph %></p>
-        <% end %>
-        <%= image_tag 'product-2.jpg' %>
-        </p>
-        <%- 3.times do %>
+        <p><%= lorem.paragraph %></p>
+        <%= image_tag 'product-2.jpg', class: 'right small' %>
+        <%- 4.times do %>
           <p><%= lorem.paragraph %></p>
         <% end %>
       </div>
