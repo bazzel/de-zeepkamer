@@ -1,5 +1,6 @@
 img {
-  padding: rhythm(.4);
+  $padding: .4;
+  padding: rhythm($padding);
   @include border-radius(2px);
   margin-bottom: rhythm(1);
   &.left {
@@ -11,6 +12,9 @@ img {
     float: right;
   }
   &.small {
-    height: rhythm(10.2);
+    height: rhythm(11 - 2*$padding);
+  }
+  &.medium {
+    height: rhythm(16 - 2*$padding);
   }
 }
