@@ -12,37 +12,21 @@
         <table>
           <thead>
             <tr>
-              <th><%= lorem.word %></th>
-              <th><%= lorem.word %></th>
-              <th><%= lorem.word %></th>
-              <th><%= lorem.word %></th>
+              <th><%= lorem.words rand(1..4) %></th>
+              <th><%= lorem.words rand(1..4) %></th>
+              <th class='right'><%= lorem.words rand(1..4)%></th>
+              <th class='right'><%= lorem.words rand(1..4) %></th>
             </tr>
           </thead>
           <tbody>
+          <%- 5.times do %>
           <tr>
-            <td><%= lorem.word %></td>
-            <td><%= lorem.word %></td>
-            <td><%= lorem.word %></td>
-            <td><%= lorem.word %></td>
+            <td><%= lorem.words 2 %></td>
+            <td><%= lorem.sentence %></td>
+            <td class='right'><%= (Date.today+rand(100)).strftime('%d %B') %></td>
+            <td class='right'>€ <%= rand(10000).to_f/100 %></td>
           </tr>
-          <tr>
-            <td><%= lorem.word %></td>
-            <td><%= lorem.word %></td>
-            <td><%= lorem.word %></td>
-            <td><%= lorem.word %></td>
-          </tr>
-          <tr>
-            <td><%= lorem.word %></td>
-            <td><%= lorem.word %></td>
-            <td><%= lorem.word %></td>
-            <td><%= lorem.word %></td>
-          </tr>
-          <tr>
-            <td><%= lorem.word %></td>
-            <td><%= lorem.word %></td>
-            <td><%= lorem.word %></td>
-            <td><%= lorem.word %></td>
-          </tr>
+        <%- end %>
           </tbody>
         </table>
       </div>

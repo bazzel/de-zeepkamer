@@ -74,4 +74,30 @@ img, object {
 
 table {
   clear: both;
+  caption, th, td {
+    vertical-align: top;
+    padding: rhythm(.5);
+    &.right {
+      text-align: right;
+    }
+  }
+  thead {
+    th {
+      font-weight: bold;
+    }
+  }
+
+  // Borders
+  th {
+    @include trailing-border($width: 2px, $lines: .5);
+  }
+  td {
+    @include trailing-border($lines: .5);
+  }
+
+  tr:last-child {
+    td {
+      border-bottom: none;
+    }
+  }
 }

@@ -1,3 +1,11 @@
 body {
   color: $text-color-dark;
 }
+
+table {
+  tbody {
+    tr:nth-child(odd) {
+      background: $table-row-bg;
+    }
+  }
+}
