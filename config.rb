@@ -72,3 +72,16 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+# See also:
+#   https://github.com/karlfreeman/middleman-deploy
+# Run:
+#   PASSWORD=secret middleman deploy
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.method       = :rsync
+  deploy.host         = 'patrickbaselier.nl'
+  deploy.path         = '/etc/www/de-zeepkamer'
+  deploy.user         = 'root'
+  deploy.password     = ENV["PASSWORD"]
+end
