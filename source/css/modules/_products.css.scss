@@ -1,0 +1,43 @@
+$products-layout: (
+gutter-position: inside,
+);
+
+.products {
+  margin: 0;
+  text-align: center;
+  li {
+    @include transition(box-shadow .3s);
+    @include with-layout($products-layout) {
+      @include gallery(3 of 9);
+    }
+    @include no-bullet;
+    @include rhythm(0,2,1,0);
+    border-color: lighten(saturate(hsl(43, 30%, 51%), 29%), 26%);
+    @include leading-border($lines: 2);
+    img {
+      @include transition-property(filter transform);
+      @include transition-duration(.1s);
+      box-shadow: none;
+      background: none;
+      padding: 0;
+      margin: 0;
+      height: rhythm(6);
+      @include filter(opacity(80%));
+    }
+    h2 {
+      /*font-family: $sans-serif-font-family;*/
+      @include adjust-font-size-to(ms(2));
+      margin: 0;
+    }
+    .price {
+      color: hsl(34, 71%, 49%);
+    }
+    &:hover {
+      box-shadow: 0 0 6px hsla(43, 30%, 51%, 0.16),0 6px 12px hsla(0, 0%, 0%, 0.32);
+      img {
+        @include filter(none);
+        @include transform(scale(1.02));
+      }
+    }
+  }
+}

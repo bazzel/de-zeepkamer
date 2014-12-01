@@ -10,9 +10,15 @@
     </section>
     <section id='body'>
       <div class='inner'>
-        <%- 5.times do %>
-          <p><%= lorem.paragraph %></p>
-      <% end %>
+        <ul class='products'>
+        <%- 15.times do |i| %>
+          <li>
+          <%= image_tag "products/product-#{rand(1..6)}.jpg" %>
+            <h2><%= lorem.words 2 %></h2>
+            <p class='price'>€ <%= rand(1000).to_f/100 %></p>
+          </li>
+        <% end %>
+        </ul>
       </div>
     </section>
   </section>
