@@ -81,7 +81,7 @@ activate :deploy do |deploy|
   deploy.build_before = true
   deploy.method       = :rsync
   deploy.host         = 'patrickbaselier.nl'
-  deploy.path         = '/etc/www/de-zeepkamer'
+  deploy.path         = '/var/www/de-zeepkamer'
   deploy.user         = 'root'
   deploy.password     = ENV["PASSWORD"]
 end
